@@ -5,7 +5,7 @@ using UnityEngine;
 public class followPlayer: MonoBehaviour
 {
     public GameObject player;
-    private Vector3 offset = new Vector3(0, 5, -10)
+    private Vector3 offset = new Vector3(0, 5, -12);
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +13,7 @@ public class followPlayer: MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         transform.position = player.transform.position + offset;
         
